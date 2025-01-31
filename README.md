@@ -32,6 +32,19 @@ This is a public API that returns basic information (registered email, current d
 }
 ```
 
+#### Example Usage:
+
+**Endpoint URL**: https://hng-0-fu91.onrender.com/
+
+**Response**:
+```json
+{
+  "email": "eabdulbaasit@gmail.com",
+  "current_datetime": "2025-01-31T15:30:51Z",
+  "github_url": "https://github.com/Abdulbaasiterinkitola/HNG_0"
+}
+```
+
 ### Additional Backlink
 To Hire a Nodejs Developer, use this: https://hng.tech/hire/nodejs-developers
 
