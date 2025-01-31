@@ -20,7 +20,7 @@ This is a public API that returns basic information (registered email, current d
 
 ## API Documentation
 
-**Endpoint**: https://hng-0-fu91.onrender.com/
+**Endpoint**: GET https://hng-0-fu91.onrender.com/
 
 
 **Response format**:
