@@ -1,5 +1,6 @@
 import express from "express";
 import cors from "cors";
+import moment from "moment";
 import {configDotenv} from "dotenv";
 
 configDotenv();
@@ -14,9 +15,10 @@ app.use(cors());
 app.get('/', (req, res) => {
   const response = {
     email: "eabdulbaasit@gmail.com",
-    current_datetime: new Date().toISOString(),
+    current_datetime: moment.utc().format('YYYY-MM-DDTHH:mm:ss[Z]'),
     github_url: 'https://github.com/Abdulbaasiterinkitola/HNG_0',
   };
+  res.set('Cache-Control', 'no-store')
   res.status(200).json(response);
 });
 
