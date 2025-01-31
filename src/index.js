@@ -7,14 +7,13 @@ configDotenv();
 const app = express();
 
 app.use(express.json())
-const PORT = process.env.PORT;
-const EMAIL = process.env.EMAIL;
+const PORT = process.env.PORT || 3000;
 
 app.use(cors());
 
 app.get('/', (req, res) => {
   const response = {
-    email: EMAIL,
+    email: "eabdulbaasit@gmail.com",
     current_datetime: new Date().toISOString(),
     github_url: 'https://github.com/Abdulbaasiterinkitola/HNG_0',
   };
